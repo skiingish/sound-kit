@@ -9,6 +9,7 @@ import { SoundSample } from '@/components/SoundSample';
 import { KeyBindingModal } from '@/components/KeyBindingModal';
 import { TrimModal } from '@/components/TrimModal';
 import { RecordingStatus } from '@/components/RecordingStatus';
+import ButtonPad from '@/components/ButtonPad';
 
 function App() {
   const [samples, setSamples] = useState<SoundSampleType[]>([]);
@@ -377,6 +378,8 @@ function App() {
             onStartRecording={() => startRecording()}
             onStopRecording={stopRecording}
           />
+
+          <ButtonPad />
 
           <div className='mb-6 p-4 bg-indigo-900/40 rounded-lg text-white'>
             <div className='flex items-center'>
