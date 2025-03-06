@@ -9,15 +9,16 @@ const ButtonPad = () => {
   };
 
   return (
-    <div className='flex justify-around items-center h-screen m-0 bg-gradient-to-r from-[#2e2c2d] to-[#424043]'>
+    <div>
+      {' '}
       <motion.button
         className={`relative w-40 h-40 rounded-[15%] outline-none border-4 border-[#090909] text-[#a6a6a6] 
         bg-gradient-to-br from-[#171717] to-[#444245]`}
         onClick={handleClick}
         animate={{
           boxShadow: isClicked
-            ? 'inset -2px -2px 0px #5e5e5e, inset 2px 2px 0px #1c1c1c'
-            : 'inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c',
+            ? 'inset -2px -2px 0px #5e5e5e, inset 2px 2px 0px #1c1c1c,  10px 10px 20px #1c1c1c, -11px -11px 22px #525252'
+            : 'inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c,  10px 10px 20px #1c1c1c, -11px -11px 22px #525252',
           backgroundImage: isClicked
             ? 'linear-gradient(to bottom right, #131313, #444245)'
             : 'linear-gradient(to bottom right, #171717, #444245)',
